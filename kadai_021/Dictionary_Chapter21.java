@@ -6,9 +6,9 @@ public class Dictionary_Chapter21 {
 	HashMap<String , String> dictionary = new HashMap<String,String>();
     
 	public void addWords() { 
-		dictionary.put ("apple" ," りんご");
+		dictionary.put ("apple" ,"りんご");
 		
-		dictionary.put ("peach" ," 桃");
+		dictionary.put ("peach" ,"桃");
 		
 		dictionary.put ("banana","バナナ");
 		dictionary.put ("lemon" , "レモン");
@@ -20,22 +20,24 @@ public class Dictionary_Chapter21 {
 		dictionary.put ("cherry ","さくらんぼ");
 	}
 	
-	public void search(String fruit) {
-		String tmp =dictionary.get( fruit );
-		if(tmp == null ) {
-			
-			System.out.println(fruit + "は辞書に存在しません" );
-			
-		} else {
-			
-			System.out.println(fruit + "の意味は" + dictionary.get( fruit) );
-			
-		}
+public void search(String[] wordList) {
 		
-		
-
+		for (String fruit : wordList) {
+			
+			
+			String tmp = dictionary.get( fruit );
+			if(tmp == null ) {
+				System.out.println(fruit + "は辞書に存在しません" );
+			} else {
+				System.out.println(fruit + "の意味は" + dictionary.get( fruit) );
+			}
+			
+		} 
 		
 	}
+		
+		
+		
 	
 	
 	

@@ -6,10 +6,10 @@ public class DictionaryExec_Chapter21 {
 		// TODO 自動生成されたメソッド・スタブ
 		Dictionary_Chapter21 hanako = new Dictionary_Chapter21();
 		hanako.addWords();
-		hanako.search("apple");
-		hanako.search("banana");
-	    hanako.search("grape");
-	    hanako.search("orange");
+		String[] words = {"apple", "banana", "grape", "orange"};
+		
+		// ② 配列ごと1回だけ search に渡す
+		hanako.search(words);
 
 }
 }
